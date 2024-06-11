@@ -1,0 +1,19 @@
+General
+This C code simulates a quadratic voting system where voters can cast votes for one of two competing proposals. Quadratic voting is a mechanism in which voters allocate votes proportionally to the square root of their preference strength. This method reflects voters' intensity of preference more accurately than traditional one-person-one-vote systems.
+
+Key Features
+1. Initialization. The code initializes parameters and allocates memory for storing voter preferences, utility values, and vote counts.
+
+2. Random Assignment. Each voter is randomly assigned a preference for one of the two proposals. This preference is represented by a spin variable, which can be either positive (for Proposal 1) or negative (for Proposal 2).
+
+3. Credit Distribution. Voters are given a set amount of credit, which they can use to cast their votes. The credit distribution can be uniform or follow a specific rule, such as increasing credit for a fraction of voters.
+
+4. Vote Casting. Voters use their allocated credit to vote for their preferred proposal. The number of votes they cast is proportional to the square root of their allocated credit.
+
+5. Vote Counting. Calculates several metrics, such as the proportion of votes for each proposal and the overall welfare, a measure of aggregate preference satisfaction.
+
+6. Simulation Runs. The simulation runs multiple times to collect statistical data on voting outcomes.
+
+7. Data Output. The results of the simulations, including vote proportions and welfare metrics, are written into a file for analysis.
+
+The code is designed to explore how quadratic voting influences the outcome of decisions between two competing proposals, providing insights into voter behavior and the efficiency of this voting mechanism.
